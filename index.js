@@ -6,8 +6,29 @@ var username = process.env.username;
 var password = process.env.password;
 var shared_secret = process.env.shared;
 
-var games = [730, 440, 570];  // Enter here AppIDs of the needed games
-var status = 1;  // 1 - online, 7 - invisible
+var games = [730, //     Counter-Strike 2
+	     // 440,     Team Fortress 2
+	     // 570,     Dota 2
+	     // 2272420, Thief Simulator 2: Prologue
+	     578080, //  PUBG: BATTLEGROUNDS
+	     236390 //   Warthunder
+	     // 1222670, The sims 4
+	     // 1085660, Destiny 2
+	     //2357570,  Overwatch
+	     //552990,   World of Warships
+	     // 1928420, Farlight 84
+	     // 304930,  Unturned
+	     // 444200,  World of tank blitz
+	     // 700330,  SCP: Secret Laborotory
+	     // 1407200, World of tanks
+	     // 1172470, Apex Legends
+	     // 601510,  Yu-Gi-Oh! Duel Links
+	     // 1449850, Yu-Gi-Oh! Master Duel
+	     // 466660,  Stash
+	     // 604500,  Tank Force: Online Shooter Game
+	     // 1203220  NARAKA: BLADEPOINT
+];  // Enter here AppIDs of the needed games
+var status = 7;  // 1 - online, 7 - invisible
 
 
 user = new steamUser();
@@ -19,18 +40,113 @@ user.on('loggedOn', () => {
 });
 
 
-// var username2 = process.env.username2;
-// var password2 = process.env.password2;
-// var shared_secret2 = process.env.shared2;
+var username2 = process.env.username2;
+var password2 = process.env.password2;
+var shared_secret2 = process.env.shared2;
 
-// var games2 = [730, 440, 570, 304930];  // Enter here AppIDs of the needed games
-// var status2 = 1;  // 1 - online, 7 - invisible
+var games2 = [730, //    Counter-Strike 2
+	     440, //     Team Fortress 2
+	     570, //     Dota 2
+	     // 2272420, Thief Simulator 2: Prologue
+	     578080, //  PUBG: BATTLEGROUNDS
+	     236390 //   Warthunder
+	     // 1222670, The sims 4
+	     1085660, // Destiny 2
+	     //2357570,  Overwatch
+	     552990, //  World of Warships
+	     // 1928420, Farlight 84
+	     304930, //  Unturned
+	     // 444200,  World of tank blitz
+	     700330, //  SCP: Secret Laborotory
+	     1407200, // World of tanks
+	     1172470, // Apex Legends
+	     // 601510,  Yu-Gi-Oh! Duel Links
+	     // 1449850, Yu-Gi-Oh! Master Duel
+	     // 466660,  Stash
+	     // 604500,  Tank Force: Online Shooter Game
+	     // 1203220  NARAKA: BLADEPOINT
+];  // Enter here AppIDs of the needed games
+var status2 = 1;  // 1 - online, 7 - invisible
 
 
-// user2 = new steamUser();
-// user2.logOn({"accountName": username2, "password": password2, "twoFactorCode": steamTotp.generateAuthCode(shared_secret2)});
-// user2.on('loggedOn', () => {
-// 	if (user2.steamID != null) console.log(user2.steamID + ' - Successfully logged on');
-// 	user2.setPersona(status2);               
-// 	user2.gamesPlayed(games2);
-// });
+user2 = new steamUser();
+user2.logOn({"accountName": username2, "password": password2, "twoFactorCode": steamTotp.generateAuthCode(shared_secret2)});
+user2.on('loggedOn', () => {
+	if (user2.steamID != null) console.log(user2.steamID + ' - Successfully logged on');
+	user2.setPersona(status2);               
+	user2.gamesPlayed(games2);
+});
+
+var username3 = process.env.username3;
+var password3 = process.env.password3;
+var shared_secret3 = process.env.shared3;
+
+var games3 = [730, //    Counter-Strike 2
+	     440, //     Team Fortress 2
+	     570, //     Dota 2
+	     // 2272420, Thief Simulator 2: Prologue
+	     578080, //  PUBG: BATTLEGROUNDS
+	     236390 //   Warthunder
+	     // 1222670, The sims 4
+	     1085660, // Destiny 2
+	     //2357570,  Overwatch
+	     552990, //  World of Warships
+	     // 1928420, Farlight 84
+	     304930, //  Unturned
+	     // 444200,  World of tank blitz
+	     700330, //  SCP: Secret Laborotory
+	     1407200, // World of tanks
+	     1172470, // Apex Legends
+	     // 601510,  Yu-Gi-Oh! Duel Links
+	     // 1449850, Yu-Gi-Oh! Master Duel
+	     // 466660,  Stash
+	     // 604500,  Tank Force: Online Shooter Game
+	     // 1203220  NARAKA: BLADEPOINT
+];  // Enter here AppIDs of the needed games
+var status3 = 1;  // 1 - online, 7 - invisible
+
+
+user3 = new steamUser();
+user3.logOn({"accountName": username3, "password": password3, "twoFactorCode": steamTotp.generateAuthCode(shared_secret3)});
+user3.on('loggedOn', () => {
+	if (user3.steamID != null) console.log(user3.steamID + ' - Successfully logged on');
+	user3.setPersona(status3);               
+	user3.gamesPlayed(games3);
+});
+
+var username4 = process.env.username4;
+var password4 = process.env.password4;
+var shared_secret4 = process.env.shared4;
+
+var games4 = [730, //    Counter-Strike 2
+	     440, //     Team Fortress 2
+	     570, //     Dota 2
+	     // 2272420, Thief Simulator 2: Prologue
+	     578080, //  PUBG: BATTLEGROUNDS
+	     236390 //   Warthunder
+	     // 1222670, The sims 4
+	     1085660, // Destiny 2
+	     //2357570,  Overwatch
+	     552990, //  World of Warships
+	     // 1928420, Farlight 84
+	     304930, //  Unturned
+	     // 444200,  World of tank blitz
+	     700330, //  SCP: Secret Laborotory
+	     1407200, // World of tanks
+	     1172470, // Apex Legends
+	     // 601510,  Yu-Gi-Oh! Duel Links
+	     // 1449850, Yu-Gi-Oh! Master Duel
+	     // 466660,  Stash
+	     // 604500,  Tank Force: Online Shooter Game
+	     // 1203220  NARAKA: BLADEPOINT
+];  // Enter here AppIDs of the needed games
+var status4 = 1;  // 1 - online, 7 - invisible
+
+
+user4 = new steamUser();
+user4.logOn({"accountName": username4, "password": password4, "twoFactorCode": steamTotp.generateAuthCode(shared_secret4)});
+user4.on('loggedOn', () => {
+	if (user4.steamID != null) console.log(user4.steamID + ' - Successfully logged on');
+	user4.setPersona(status4);               
+	user4.gamesPlayed(games4);
+});
